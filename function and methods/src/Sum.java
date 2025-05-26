@@ -20,6 +20,16 @@ public class Sum {
         sum = num1 + num2;
         System.out.println("The sum of 2 nums = " + sum);
     }
+
+
+    /* return_type name (arguments){
+    body
+    return statement;
+    }
+
+     */
+
+
     //RETURN THE VALUE
     static int sum2(){
         Scanner in = new Scanner(System.in);
@@ -34,3 +44,4 @@ public class Sum {
         return sum;
     }
 }
+
