@@ -1,7 +1,7 @@
 public class ceilingOfNumber {
     public static void main(String[] args) {
         //cieling  =  smalled element in the array greater or = target
-        int [] arr = {2,3,4,9,14,16,18};
+        int [] arr = {2,3,4,6,8,9,12,23,54};
         int target = 15;
         int ans = ceil(arr, target);
         System.out.println(ans);
