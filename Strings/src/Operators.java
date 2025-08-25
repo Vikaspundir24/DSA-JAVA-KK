@@ -4,6 +4,9 @@ public class Operators {
     public static void main(String[] args) {
         System.out.println('a' + 'b');
         System.out.println("a" + "b");
+
+        // + opera tor is used as operator overloading in case of STRINGs only!!
+
         System.out.println((char)('a' + 2));
         System.out.println("a" + 1);
 
