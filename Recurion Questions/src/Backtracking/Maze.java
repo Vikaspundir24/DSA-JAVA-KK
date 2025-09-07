@@ -1,20 +1,28 @@
 package Backtracking;
 
 public class Maze {
-    static int output;
+
     public static void main(String[] args) {
-        output = 0;
-        fun(2,2);
-        System.out.print(output);
+        System.out.println(count(3,3));
+    }
+    static int count(int r,int c){
+        if (r==1 || c==1){
+            return 1;
+        }
+        int left = count(r-1,c);
+        int right = count(r,c-1);
+        return left+right;
 
     }
-    static void fun(int row,int col){
 
-        if(row == 1 || col == 1 ){
-            output++;
+    static void path(String p, int r, int c){
+        if(r == 1 && c==1 ){
+            System.out.print(p);
             return;
         }
-        fun(row-1,col);
-        fun(row,col-1);
+        if (row > 1){
+            path(p+'D', r-1,c);
+        }
+
     }
 }
