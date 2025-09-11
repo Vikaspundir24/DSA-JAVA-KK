@@ -8,8 +8,9 @@ public class Main{
 
 }
 //Creating a class
+// data type for every single student
 class  Student {
-    int [] rno = new int[5];
-    String [] name = new String[5];
-    float []  marks = new float[5];
+    int rno ;
+    String name ;
+    float marks ;
 }
