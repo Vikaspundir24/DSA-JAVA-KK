@@ -7,10 +7,13 @@ public class Main{
        //just declaring
         //Student Vikas;
         //Vikas = new Student();
-        Student vikas  = new Student();
+        Student vikas  = new Student(12,"VIKAS PUNDIR", 99.4f);
+        Student ramnath =  new Student();
 //        vikas.rno = 12;
 //        vikas.name = "Vikas pundir";
 //        vikas.marks= 99.5f;
+//        vikas.changeName("VP");
+//        vikas.greeting();
 
         System.out.println(vikas.rno);
         System.out.println(vikas.name);
@@ -27,9 +30,20 @@ class Student {
     //properties object by object
     //we need one word to access every object
 
+    void greeting(){
+        System.out.println("Hello, my name is " + this.name);
+    }
+    void changeName(String newName){
+        name = newName;
+    }
     Student(){
         this.rno = 12;
         this.name = "Vikas pundir";
         this.marks= 99.5f;
+    }
+    Student(int rno, String name, float marks ){
+        this.rno = rno;
+        this.name = name;
+        this.marks= marks;
     }
 }
