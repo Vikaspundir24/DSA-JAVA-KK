@@ -7,22 +7,34 @@ public class Main{
         //just declaring
         //Student Vikas;
         //Vikas = new Student();
+
         Student vikas  = new Student();
         //Student ramnath =  new Student(10,"Ramnath Kumar", 99.f);
-//        vikas.rno = 12;
-//        vikas.name = "Vikas pundir";
-//        vikas.marks= 99.5f;
-    //    ramnath.changeName("Suraj");
-     //   vikas.greeting();
-       // ramnath.greeting();
 
-//        System.out.println(vikas.rno);
-//        System.out.println(vikas.name);
-//        System.out.println(vikas.marks);
+        //vikas.rno = 12;
+        //vikas.name = "Vikas pundir";
+        //vikas.marks= 99.5f;
+
+        //ramnath.changeName("Suraj");
+
+        //vikas.greeting();
+        //ramnath.greeting();
+
+        System.out.println(vikas.rno);
+        System.out.println(vikas.name);
+        System.out.println(vikas.marks);
+
         Student random = new Student(vikas);
-       // System.out.println(random.name);
+        System.out.println(random.name);
+
         Student random2   = new Student();
         System.out.println(random2.name);
+
+        Student one = new Student();
+        Student two  = one;
+
+        one.name = "Something Something";
+        System.out.println(two.name);
     }
 
 }
